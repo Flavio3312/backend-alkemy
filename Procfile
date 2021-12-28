@@ -1,2 +1,2 @@
-web: nodemon index.js -e js,hbs --exec babel-node
+web: nodemon index.js 
 

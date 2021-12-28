@@ -8,6 +8,9 @@
     "start-test": "cross-env NODE_ENV=test nodemon index.js",
     "dev": "cross-env NODE_ENV=development nodemon index.js"
   },
+  "engines": {
+    "nodemon": "^2.0.15"
+  },
   "author": "Flavio Perez",
   "license": "ISC",
   "dependencies": {
