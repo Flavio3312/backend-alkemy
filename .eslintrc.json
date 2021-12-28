@@ -9,5 +9,12 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "moduleDirectory": ["src", "node_modules"]
+      }
+    }
+  },
   "rules": { "no-console": "off", "import/extensions": "off" }
 }
