@@ -18,13 +18,13 @@ Y listo, el siguiente comando es para correr la <b>API</b> en modo de desarrollo
 
 2.configurar prisma schema
 
-2.a npx prisma generate
+2.a `npx prisma generate`
 
-2.b  npx prisma migrate dev --20211227230013_frist_one --create-only
+2.b  `npx prisma migrate dev --20211227230013_frist_one --create-only`
 
-2.c npx prisma migrate dev
+2.c `npx prisma migrate dev`
 
-2.d prisma db push
+2.d `prisma db push`
 
 
 
