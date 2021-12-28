@@ -4,7 +4,7 @@
   "description": "challenge alkemy",
   "main": "src/index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=production nodemon index.js",
+    "start": "NODE_ENV=production node index.js",
     "start-test": "cross-env NODE_ENV=test nodemon index.js",
     "dev": "cross-env NODE_ENV=development nodemon index.js"
   },
@@ -22,9 +22,11 @@
     "jest": "^27.4.5",
     "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0",
+    "netlify-lambda": "^2.0.15",
     "nodemon": "^2.0.15",
+    "prettier": "^2.5.1",
     "prisma": "^3.7.0",
-    "prettier": "^2.5.1"
+    "serverless-http": "^2.7.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.12",
