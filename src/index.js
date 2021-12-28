@@ -5,7 +5,7 @@ import app from './app.js';
 const server = http.createServer(app);
 
 const startServer = async () => {
-  server.listen(PORT, (err) => {
+  server.listen(PORT || 5000, (err) => {
     if (err) {
       console.log(err);
       return;
