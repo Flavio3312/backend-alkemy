@@ -1,1 +1,2 @@
-web: nodemon -e js,hbs -x "npm run build" -w ./src/server/server.js -d
+web: nodemon index.js -e js,hbs --exec babel-node
+
