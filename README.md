@@ -1,4 +1,4 @@
-# __API CHALLENGE ALKEMY BACKEND__
+__API CHALLENGE ALKEMY BACKEND__
 
 
 
@@ -8,44 +8,48 @@
 
 **cd backend-alkemy**
 
-|npm install|
+>npm install
+
   
 
->listo, el siguiente comando es para correr la **API** en modo de desarrollo:
+__Listo, el siguiente comando es para correr la **API** en modo de desarrollo__:
 
-|npm run dev|
+>npm run dev
 
 
 
 2 *Configurar prisma schema*
 
-|2.A **npx prisma generate**|
+>2.A **npx prisma generate**
 
-|2.B **npx prisma migrate dev --20211227230013_frist_one --create-only**|
-|2.C **npx prisma migrate dev**|
-|2.D **prisma db push**|
+>2.B **npx prisma migrate dev --20211227230013_frist_one --create-only**
+
+>2.C **npx prisma migrate dev**
+
+>2.D **prisma db push**
      
 
 
 
 
 3 *Recorda crear tu archivo .env con la conexion a tu base de datos por ejemplo postgresql*
----JSON
+
+```JSON
 DATABASE_URL="postgresql://usuario:contraseña@localhost:5432/nombrebasededatos?schema=public"
 PORT=""
 SECRET=""
 DATABASE_URL_PROD=""
 DATABASE_URL_DEV=""
 DATABASE_URL_TEST=""
----
+```
 
-===============================================================================================================================================================================================================================================
+
 ### *API REST*
 
 - **POST http://localhost:3001/api/records**
-** Content-Type: application/json ** 
-Authorization: bearer 2cJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsdGVzdDE1QGdtYWlsLmNvbSIsImlkIjoiYWJjOGNkNGUtMGJlOC00ZmNhLTk3YjctMjAzZGE4MTQ2OTFhIiwiaWF0IjoxNjE5MzgxODQ0fQ.veAaUY-VB5KCRujuEbPvzjvuEdq7Vkm00zlOqBM6BH7
----JSON
+- **Content-Type: application/json ** 
+- Authorization: bearer 2cJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsdGVzdDE1QGdtYWlsLmNvbSIsImlkIjoiYWJjOGNkNGUtMGJlOC00ZmNhLTk3YjctMjAzZGE4MTQ2OTFhIiwiaWF0IjoxNjE5MzgxODQ0fQ.veAaUY-VB5KCRujuEbPvzjvuEdq7Vkm00zlOqBM6BH7
+```JSON
 {
     "concept": "home",
     "amount": 20,
@@ -53,31 +57,31 @@ Authorization: bearer 2cJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsd
     "isIncome": false,
     "date": "2012-01-01"
 }
----
+```
 
 
 - **POST http://localhost:3001/api/users**
 **Content-type: application/json**
----JSON
+```JSON
 {
     "email": algo@gmail.com",
     "password": "12345678"
 }
----
+```
 
 - **GET  http://localhost:3001/api/users**
-Content-Type: application/json
-Authorization: bearer 2cJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsdGVzdDE1QGdtYWlsLmNvbSIsImlkIjoiYWJjOGNkNGUtMGJlOC00ZmNhLTk3YjctMjAzZGE4MTQ2OTFhIiwiaWF0IjoxNjE5MzgxODQ0fQ.veAaUY-VB5KCRujuEbPvzjvuEdq7Vkm00zlOqBM6BH7
+- Content-Type: application/json
+- Authorization: bearer 2cJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsdGVzdDE1QGdtYWlsLmNvbSIsImlkIjoiYWJjOGNkNGUtMGJlOC00ZmNhLTk3YjctMjAzZGE4MTQ2OTFhIiwiaWF0IjoxNjE5MzgxODQ0fQ.veAaUY-VB5KCRujuEbPvzjvuEdq7Vkm00zlOqBM6BH7
 
 - **POST http://localhost:3001/api/login**
-Content-type: application/json
----JSON
+- Content-type: application/json
+```JSON
 {
     "email": "algo@gmail.com",
     "password": "12345678"
 }
 
----
+```
 
 
 
