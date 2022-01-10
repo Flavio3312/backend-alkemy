@@ -47,8 +47,8 @@ DATABASE_URL_TEST=""
 ### *API REST*
 
 - **POST http://localhost:3001/api/records**
-- **Content-Type: application/json ** 
-- Authorization: bearer 2cJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsdGVzdDE1QGdtYWlsLmNvbSIsImlkIjoiYWJjOGNkNGUtMGJlOC00ZmNhLTk3YjctMjAzZGE4MTQ2OTFhIiwiaWF0IjoxNjE5MzgxODQ0fQ.veAaUY-VB5KCRujuEbPvzjvuEdq7Vkm00zlOqBM6BH7
+- Content-Type: application/json
+>Authorization: bearer 2cJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsdGVzdDE1QGdtYWlsLmNvbSIsImlkIjoiYWJjOGNkNGUtMGJlOC00ZmNhLTk3YjctMjAzZGE4MTQ2OTFhIiwiaWF0IjoxNjE5MzgxODQ0fQ.veAaUY-VB5KCRujuEbPvzjvuEdq7Vkm00zlOqBM6BH7
 ```JSON
 {
     "concept": "home",
@@ -61,17 +61,17 @@ DATABASE_URL_TEST=""
 
 
 - **POST http://localhost:3001/api/users**
-**Content-type: application/json**
+- Content-type: application/json
 ```JSON
 {
-    "email": algo@gmail.com",
+    "email": "algo@gmail.com",
     "password": "12345678"
 }
 ```
 
 - **GET  http://localhost:3001/api/users**
 - Content-Type: application/json
-- Authorization: bearer 2cJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsdGVzdDE1QGdtYWlsLmNvbSIsImlkIjoiYWJjOGNkNGUtMGJlOC00ZmNhLTk3YjctMjAzZGE4MTQ2OTFhIiwiaWF0IjoxNjE5MzgxODQ0fQ.veAaUY-VB5KCRujuEbPvzjvuEdq7Vkm00zlOqBM6BH7
+>Authorization: bearer 2cJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImVtYWlsdGVzdDE1QGdtYWlsLmNvbSIsImlkIjoiYWJjOGNkNGUtMGJlOC00ZmNhLTk3YjctMjAzZGE4MTQ2OTFhIiwiaWF0IjoxNjE5MzgxODQ0fQ.veAaUY-VB5KCRujuEbPvzjvuEdq7Vkm00zlOqBM6BH7
 
 - **POST http://localhost:3001/api/login**
 - Content-type: application/json
